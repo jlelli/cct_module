@@ -14,7 +14,7 @@ Feature: tests for all openshift images
     Then the image should contain label release
     And the image should contain label version
     And the image should contain label name
-    And the image should contain label architecture with value x86_64
+    And the image should contain label architecture with value ppc64le
     And the image should contain label io.openshift.s2i.scripts-url with value image:///usr/local/s2i
 
   # not currently openjdk which exits too quickly
